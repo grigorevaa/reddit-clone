@@ -1,0 +1,47 @@
+button {
+  background: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  gap: 0.5rem;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+}
+
+.userPanel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.getAppBtn {
+  display: flex;
+  align-items: center;
+  background: #333948;
+}
+
+.getAppBtn:hover {
+  background: #555e77;
+}
+
+.loginBtn {
+  background: #cd4b13;
+}
+
+.loginBtn:hover {
+  background: #95370e;
+}
+
+.optionsBtn {
+  border: 100%;
+  padding: 1.15rem;
+  display: flex;
+  align-items: center;
+}
+
+.optionsBtn:hover {
+  background: #555e77;
+}
