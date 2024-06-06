@@ -10,7 +10,7 @@ function SearchBar() {
     <div className={styles.container}>
       <div className={styles.searchBar}>
         <span className={styles.icon}>
-          <CiSearch size={'2rem'} color="#DBDEE6" />
+          <CiSearch size={'2rem'} color={'#f3f4f7'} />
         </span>
         <div className={styles.searchInputContainer}>
           <input
@@ -28,7 +28,7 @@ function SearchBar() {
                 setSearch('');
               }}
             >
-              <RxCrossCircled size={'2rem'} color="#DBDEE6" />
+              <RxCrossCircled size={'2rem'} color={'#f3f4f7'} />
             </button>
           )}
         </span>
