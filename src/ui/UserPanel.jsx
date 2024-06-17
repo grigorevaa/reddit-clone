@@ -4,12 +4,14 @@ import styles from '../styles/UserPanel.module.css';
 function UserPanel() {
   return (
     <div className={styles.userPanel}>
-      <button className={styles.getAppBtn}>
+      <button className={`${styles.buttonUserPanel} ${styles.getAppBtn}`}>
         <BsQrCodeScan color={'#f3f4f7'} size={'1.6rem'} />
         <span>Get app</span>
       </button>
-      <button className={styles.loginBtn}>Log in</button>
-      <button className={styles.optionsBtn}>
+      <button className={`${styles.buttonUserPanel} ${styles.loginBtn}`}>
+        Log in
+      </button>
+      <button className={`${styles.buttonUserPanel} ${styles.optionsBtn}`}>
         <BsThreeDots color={'#f3f4f7'} size={'1.8rem'} />
       </button>
     </div>

@@ -1,9 +1,10 @@
 .headerBar {
+  position: sticky;
+  top: 0;
   height: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #111318;
-  color: #dbdee6;
-  font-size: 1.6rem;
+  border-bottom: 1px solid #333948;
 }

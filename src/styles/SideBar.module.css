@@ -1,0 +1,120 @@
+.sideBar {
+  position: sticky;
+  top: 6rem;
+  padding: 1rem;
+  height: calc(100vh - 6rem);
+  width: 27rem;
+  background-color: #111318;
+  border-right: 1px solid #333948;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: #111318 #111318;
+  scrollbar-width: thin;
+}
+
+.sideBar:hover {
+  scrollbar-color: #333948 #111318;
+}
+
+.dropdownRecentClose,
+.dropdownTopicsClose,
+.dropdownResoursesClose {
+  display: none;
+  animation: vanish 0.2s;
+}
+
+.dropdownRecentOpen,
+.dropdownTopicsOpen,
+.dropdownResoursesOpen {
+  display: block;
+  animation: appear 0.5s;
+}
+
+.dropdownRecentOpen::backdrop,
+.dropdownTopicsOpen::backdrop,
+.dropdownResoursesOpen::backdrop {
+  display: none;
+}
+
+.horizontalLine {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-color: #333948;
+  width: 23rem;
+  /* margin-left: 0; */
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 3.6rem;
+  padding-bottom: 1.8rem;
+  padding-right: 2.4rem;
+}
+
+.footerLink:link,
+.footerLink:visited {
+  text-decoration: none;
+  color: #f3f4f7;
+  cursor: pointer;
+}
+
+.footerLink:hover,
+.footerLink:active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: ease 0.2s;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: ease 0.5s;
+  }
+}
+
+@keyframes vanish {
+  from {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: ease 0.5s;
+  }
+
+  to {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: ease 0.2s;
+  }
+}
+
+/* Если не нужно скроллить, то это хорошее решение
+.dropdownResoursesOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: ease 0.5s;
+}
+
+.dropdownResoursesClose {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: ease 0.2s;
+} */

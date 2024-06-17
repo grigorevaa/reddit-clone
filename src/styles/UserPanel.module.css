@@ -1,18 +1,18 @@
-button {
-  background: none;
-  border: none;
+.buttonUserPanel {
   border-radius: 5rem;
   font-size: 1.4rem;
   gap: 0.5rem;
-  padding: 1.2rem 1.5rem;
+  padding: 1.1rem 1.5rem;
   cursor: pointer;
+  color: #f3f4f7;
+  white-space: nowrap;
+  font-weight: 500;
 }
 
 .userPanel {
   display: flex;
   align-items: center;
   gap: 1rem;
-  flex-shrink: 0;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -28,8 +28,7 @@ button {
 }
 
 .loginBtn {
-  color: #f3f4f7;
-  background: #cd4b13;
+  background: #ce3608;
 }
 
 .loginBtn:hover {

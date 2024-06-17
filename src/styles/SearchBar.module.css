@@ -5,28 +5,32 @@
 }
 
 .searchBar {
-  width: 60rem;
+  width: 55rem;
   height: 4rem;
   background-color: #333948;
   border-radius: 5rem;
   display: flex;
   align-items: center;
+  margin-left: 20rem;
 }
 
 .icon {
-  margin: 0.3rem 0.7rem 0 2rem;
+  margin: 0.3rem 0.7rem 0 1.5rem;
 }
 
 .searchInputContainer {
   width: 50rem;
+  padding-right: 1rem;
 }
 
 .searchInput {
   width: 100%;
   background-color: #333948;
   border: none;
+  padding-top: 0.3rem;
   font-size: 1.4rem;
   color: #f3f4f7;
+  align-items: center;
 }
 
 .searchInput:focus {
@@ -35,6 +39,7 @@
 }
 
 .clearButton {
+  margin-right: 1.5rem;
   background: none;
   border: none;
   padding: 0.5rem;
