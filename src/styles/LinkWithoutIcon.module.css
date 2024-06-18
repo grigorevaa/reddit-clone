@@ -1,0 +1,25 @@
+.linkWithoutIcon:link,
+.linkWithoutIcon:visited {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f3f4f7;
+  height: 4rem;
+  width: 20rem;
+  margin-left: 3rem;
+  padding-left: 1.5rem;
+
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-left: solid 1px #333948;
+
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.linkWithoutIcon:hover,
+.linkWithoutIcon:active {
+  color: #ffffff;
+  background-color: #333948;
+  border-left: solid 1px #555e77;
+}

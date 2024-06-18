@@ -22,23 +22,17 @@
   scrollbar-color: #333948 #111318;
 }
 
-.dropdownRecentClose,
-.dropdownTopicsClose,
-.dropdownResoursesClose {
+.dropdownClose {
   display: none;
   animation: vanish 0.2s;
 }
 
-.dropdownRecentOpen,
-.dropdownTopicsOpen,
-.dropdownResoursesOpen {
+.dropdownOpen {
   display: block;
   animation: appear 0.5s;
 }
 
-.dropdownRecentOpen::backdrop,
-.dropdownTopicsOpen::backdrop,
-.dropdownResoursesOpen::backdrop {
+.dropdownOpen::backdrop {
   display: none;
 }
 
