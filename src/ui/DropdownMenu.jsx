@@ -1,22 +1,17 @@
 /* eslint-disable react/prop-types */
-import LinkWithIcon from './LinkWithIcon';
-import LinkWithoutIcon from './LinkWithoutIcon';
+import DropdownItem from './DropdownItem';
 
-function DropdownMenu({ listOfLinks, withIcon }) {
+function DropdownMenu({ links }) {
   return (
     <>
-      {withIcon
-        ? listOfLinks.map((item) => (
-            <LinkWithIcon
-              path="#"
-              title={item.title}
-              icon={item.icon}
-              key={item.id}
-            />
-          ))
-        : listOfLinks.map((item) => (
-            <LinkWithoutIcon path="#" title={item.title} key={item.id} />
-          ))}
+      {links.map((item) => (
+        <DropdownItem
+          path="#"
+          title={item.title}
+          icon={item.icon}
+          key={item.id}
+        />
+      ))}
     </>
   );
 }

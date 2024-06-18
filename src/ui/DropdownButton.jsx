@@ -2,13 +2,13 @@
 import { SlArrowDown, SlArrowUp } from 'react-icons/sl';
 import styles from '../styles/DropdownButton.module.css';
 
-function DropdownButton({ title, status, setStatus, withIcon, icon }) {
+function DropdownButton({ title, status, setStatus, icon }) {
   return (
     <button
       className={styles.dropdownButton}
       onClick={() => setStatus(!status)}
     >
-      {withIcon ? (
+      {icon ? (
         <div className={styles.container}>
           <span className={styles.icon}>{icon}</span>
           <span className={styles.titleWithIcon}>{title}</span>

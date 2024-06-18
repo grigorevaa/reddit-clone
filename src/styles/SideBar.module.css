@@ -22,20 +22,6 @@
   scrollbar-color: #333948 #111318;
 }
 
-.dropdownClose {
-  display: none;
-  animation: vanish 0.2s;
-}
-
-.dropdownOpen {
-  display: block;
-  animation: appear 0.5s;
-}
-
-.dropdownOpen::backdrop {
-  display: none;
-}
-
 .horizontalLine {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -62,40 +48,6 @@
 .footerLink:active {
   color: #ffffff;
   text-decoration: underline;
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-20px);
-    transition: ease 0.2s;
-  }
-
-  to {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transition: ease 0.5s;
-  }
-}
-
-@keyframes vanish {
-  from {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transition: ease 0.5s;
-  }
-
-  to {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-20px);
-    transition: ease 0.2s;
-  }
 }
 
 /* Если не нужно скроллить, то это хорошее решение

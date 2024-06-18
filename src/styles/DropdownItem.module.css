@@ -1,0 +1,49 @@
+.linkWithIcon:link,
+.linkWithIcon:visited,
+.linkWithoutIcon:link,
+.linkWithoutIcon:visited {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f3f4f7;
+  height: fit-content;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+
+.linkWithIcon:link,
+.linkWithIcon:visited {
+  border-radius: 1rem;
+}
+
+.linkWithoutIcon:link,
+.linkWithoutIcon:visited {
+  width: 20rem;
+  margin-left: 3rem;
+  padding-left: 1.5rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-left: solid 1px #333948;
+}
+
+.linkWithIcon:hover,
+.linkWithIcon:active,
+.linkWithoutIcon:hover,
+.linkWithoutIcon:active {
+  color: #ffffff;
+  background-color: #333948;
+}
+
+.linkWithoutIcon:hover,
+.linkWithoutIcon:active {
+  border-left: solid 1px #555e77;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 1.5rem;
+}
