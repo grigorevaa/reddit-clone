@@ -4,15 +4,15 @@ import Header from './Header';
 import SideBar from './SideBar';
 
 function AppLayout() {
-  return (
-    <div>
-      <Header />
-      <main className={styles.container}>
-        <SideBar />
-        <Outlet />
-      </main>
-    </div>
-  );
+	return (
+		<div>
+			<Header />
+			<main className={styles.container}>
+				<SideBar />
+				<Outlet />
+			</main>
+		</div>
+	);
 }
 
 export default AppLayout;
